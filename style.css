@@ -1,0 +1,241 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#entire-page{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,ifr);
+    grid-template-rows: 20% 65% 15%;
+    background-image: url("assets/pic/woodblue.jpg");
+}
+
+#entire-page  > * {
+
+    border: 2px solid white;
+    text-align: center;
+
+}
+
+header{
+    grid-column: span 12;
+    text-align: center;
+
+}
+
+
+
+.header-h1{
+    display: inline-block;
+    font-size: 40px;
+
+    font-family:cartoon3d;
+    margin-top: auto;
+    padding-top: auto;
+    color: black;
+}
+
+
+
+aside{
+    grid-column: span 2;
+
+
+}
+
+
+.aside-list{
+    list-style: none;
+
+    display: inline;
+}
+
+
+
+li{
+    padding: 6px;
+    background-color: aqua;
+    margin: 3px;
+    opacity: 0.8;
+}
+
+
+li:hover{
+    background-color: darkred;
+    color: white;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+main{
+    grid-column: span 10;
+    background-image: url("assets/pic/wall-paper.jpg");
+
+}
+
+.css-12-Features{
+    text-align: justify;
+    column-count: 2;
+    margin-left: 20%;
+}
+
+
+
+footer{
+    grid-column: span 12;
+
+}
+
+footer > h2{
+
+
+    font-family:cartoon3d;
+    font-size: 40px;
+    color: black;
+
+}
+
+
+/*  fonts */
+
+
+@font-face{
+    font-family:cartoon3d;
+    src: url("assets/fonts/Good-Choice.ttf");
+}
+
+@font-face{
+    font-family:mona;
+    src: url("assets/fonts/CAVEMAN_.TTF");
+}
+
+
+/*  1. selector - hover*/
+
+.hover-selector{
+    margin: auto;
+}
+
+
+.hover-selector:hover{
+    color: blue;
+    margin: auto;
+}
+
+.css-first-fetures-div{
+    width: 30%;
+    margin: auto;
+
+
+}
+
+.css-first-Feature{
+    text-align: justify;
+
+}
+.css-first-Feature:hover{
+    color: blue;
+}
+
+/*  2. round-corners */
+.round-corners{
+    width: 300px;
+    height: 200px;
+    background-color: darkblue;
+    margin: auto;
+    border-radius: 25px;
+}
+
+/*  3. shadwing */
+.shadwing{
+     width: 300px;
+    height: 200px;
+    background-color: darkblue;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 10px 20px 25px black;
+}
+
+/* 4. gradient */
+.gradient{
+      width: 300px;
+    height: 200px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 10px 20px 25px black;
+     background: linear-gradient(red, yellow);
+ 
+}
+
+.css-12-Features-font{
+    text-align: justify;
+    column-count: 2;
+    margin-left: 20%;
+    
+}
+ 
+
+.css-12-Features-font:hover{
+    font-family:cartoon3d;
+    
+}
+
+
+.trans{
+     width: 300px;
+    height: 200px;
+    background-color: darkblue;
+    margin: auto;
+    border-radius: 25px;
+    transform: skew(25deg);
+}
+
+
+.transitions{
+    
+      width: 300px;
+    height: 200px;
+    background-color: darkblue;
+    margin: auto;
+    transition: background-color 5s ease;
+}
+
+
+.transitions:hover {
+    width: 50px;
+    background-color: crimson;
+    transition: width 3s;
+     
+}
+
+.animations{
+     width: 300px;
+    height: 200px;
+    background-color: darkblue;
+    animation: rotate 3s  infinite linear;
+    margin: auto;
+}
+
+@keyframes rotate{
+    
+    from{
+     transform: rotate(0deg) ;  
+        
+    }
+    
+    to{
+      transform: rotate(360deg); 
+        
+    } 
+    
+}
